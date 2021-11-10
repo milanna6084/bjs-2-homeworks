@@ -23,7 +23,7 @@ Student.prototype.addMarks = function (...marks) {
     this.marks = marks;
   } 
   else {
-      this.marks.contact(marks);
+      this.marks = this.marks.concat(marks);
   }
 
 }
